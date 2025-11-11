@@ -1,0 +1,135 @@
+* {
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #f5f5f5 0%, #c8e6c9 100%);
+  min-height: 100vh;
+}
+
+h1 {
+  color: #1b5e20;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.meeting-info {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 4px 6px rgba(27, 94, 32, 0.15);
+  border: 2px solid #2e7d32;
+}
+
+.meeting-info h2 {
+  color: #1b5e20;
+  margin-top: 0;
+}
+
+.calendar {
+  background: white;
+  border: 2px solid #2e7d32;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(27, 94, 32, 0.15);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.calendar-header span {
+  color: #1b5e20;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.calendar-header button {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(46, 125, 50, 0.4);
+}
+
+.calendar-header button:hover {
+  background: #1b5e20;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(46, 125, 50, 0.5);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.calendar-day {
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #1b5e20;
+  margin-bottom: 5px;
+}
+
+.calendar-date {
+  text-align: center;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #e8f5e9;
+  color: #1b5e20;
+  font-weight: 500;
+}
+
+.calendar-date:hover {
+  background: #a5d6a7;
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.4);
+}
+
+.calendar-date.selected {
+  background: #2e7d32;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(46, 125, 50, 0.5);
+}
+
+.calendar-date.selected:hover {
+  background: #1b5e20;
+}
+
+.calendar-date.empty {
+  background: transparent;
+  cursor: default;
+}
+
+.calendar-date.empty:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+button {
+  padding: 10px 24px;
+  font-size: 16px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(4
